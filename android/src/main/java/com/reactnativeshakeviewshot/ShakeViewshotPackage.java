@@ -17,6 +17,8 @@ public class ShakeViewshotPackage implements ReactPackage {
     public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
         modules.add(new ShakeViewshotModule(reactContext));
+      modules.add(new RNShakeEventModule(reactContext));
+      modules.add(new RNViewShotModule(reactContext));
         return modules;
     }
 
